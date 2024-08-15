@@ -23,8 +23,7 @@ int main(int argc, char *argv[]) {
     if (argc != 2) {
         exit(0);
     }
-    int keylen = atoi(argv[1]);
-    uint8_t key[keylen];
-    azrandom(keylen);
+    int length = atoi(argv[1]);
+    azrandom(length);
     return 0;
 }
